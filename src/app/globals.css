@@ -24,3 +24,29 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+
+.tarjeta-global {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.tarjeta-global:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(211, 15, 15, 0.952);
+}
+
+.titulo-global {
+  font-size: 1.5rem;
+  color: #333;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.contenido-global {
+  color: #666;
+  line-height: 1.6;
+}
