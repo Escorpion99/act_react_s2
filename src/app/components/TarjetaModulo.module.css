@@ -1,104 +1,54 @@
-/*
- * Módulo CSS para el componente TarjetaModulo.
- * Las clases se compondrán automáticamente para evitar conflictos de nombres.
- */
 
-/* Estilos base para la tarjeta */
 .tarjeta {
-  padding: 1.5rem;
-  border-radius: 0.75rem;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-  font-family: 'Inter', sans-serif;
-  margin: 1rem;
-  max-width: 300px;
+  border: 1px solid #e0e0e0;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin: 10px;
 }
 
 .tarjeta:hover {
-  transform: translateY(-5px) scale(1.02);
-  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+  transform: translateY(-3px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
 }
 
-/* Encabezado de la tarjeta para agrupar título y categoría */
 .encabezado {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 1rem;
+  margin-bottom: 10px;
 }
 
-/* Título de la tarjeta */
 .titulo {
-  font-size: 1.25rem;
-  font-weight: 600;
-  color: #1a202c;
+  font-size: 20px;
+  color: #2c3e50;
   margin: 0;
 }
 
-/* Descripción de la tarjeta */
 .descripcion {
-  font-size: 1rem;
-  color: #4a5568;
+  font-size: 16px;
+  color: #7f8c8d;
   line-height: 1.5;
-  margin: 0;
 }
 
-/* Categoría de la tarjeta */
 .categoria {
-  font-size: 0.875rem;
-  font-weight: 500;
-  padding: 0.25rem 0.75rem;
-  border-radius: 9999px;
-  background-color: #e2e8f0;
-  color: #2d3748;
+  font-size: 14px;
+  font-weight: bold;
+  color: #3498db;
+  text-transform: uppercase;
 }
 
-/*
- * Ejercicio 2.2: Variantes de tarjeta con composición de clases
- * Cada variante tiene un esquema de colores único.
- */
-
-/* Variante Primaria */
+/* Variantes */
 .tarjetaPrimaria {
-  background-color: #2a6fdb;
+  background-color: #ecf0f1;
 }
 
-.tarjetaPrimaria .titulo,
-.tarjetaPrimaria .descripcion {
-  color: #e2e8f0;
-}
-
-.tarjetaPrimaria .categoria {
-  background-color: #1a56b8;
-  color: #fff;
-}
-
-/* Variante Secundaria */
 .tarjetaSecundaria {
-  background-color: #cbd5e0;
+  background-color: #f1f9f9;
 }
 
-.tarjetaSecundaria .titulo,
-.tarjetaSecundaria .descripcion {
-  color: #2d3748;
-}
-
-.tarjetaSecundaria .categoria {
-  background-color: #a0aec0;
-  color: #fff;
-}
-
-/* Variante Éxito */
 .tarjetaExito {
-  background-color: #38a169;
-}
-
-.tarjetaExito .titulo,
-.tarjetaExito .descripcion {
-  color: #fff;
-}
-
-.tarjetaExito .categoria {
-  background-color: #2f855a;
-  color: #fff;
+  background-color: #e8f5e9;
+  border-color: #4caf50;
 }

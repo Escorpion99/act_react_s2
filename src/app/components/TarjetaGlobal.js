@@ -1,13 +1,15 @@
+import React from 'react';
+import '../globals.css';
 
-import '../globals.css'; 
-
-const Tarjeta = ({ titulo, contenido, color }) => {
+const TarjetaGlobal = ({ titulo, contenido, color }) => {
   return (
-    <div className="tarjeta-global" style={{ backgroundColor: color }}>
-      <h2 className="titulo-global">{titulo}</h2>
+    <div className="tarjeta-global" style={{ borderColor: color }}>
+      <h2 className="titulo-global" style={{ color: color }}>
+        {titulo}
+      </h2>
       <p className="contenido-global">{contenido}</p>
     </div>
   );
 };
 
-export default Tarjeta;
+export default TarjetaGlobal;
